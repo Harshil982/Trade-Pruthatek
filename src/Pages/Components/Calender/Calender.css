@@ -1,0 +1,7 @@
+.cursor span{
+    cursor: pointer;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1) !important;
+}

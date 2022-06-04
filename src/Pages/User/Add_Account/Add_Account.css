@@ -1,0 +1,29 @@
+.bg-none {
+  background-color: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.input-border {
+  border-radius: 7px !important;
+}
+
+.color-orange {
+  color: #fab417;
+}
+
+.button-effect:hover {
+  background-color: rgb(150, 41, 41);
+}
+
+
+
+.input-group-text {
+  font-size: 0.875rem !important;
+}
+
+.bg-brown{
+  background-color: #702313 !important
+}

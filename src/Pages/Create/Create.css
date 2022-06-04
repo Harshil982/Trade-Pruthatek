@@ -1,0 +1,32 @@
+.b-r-none{
+    border-radius: none;
+}
+
+.custom-w{
+    width: 10rem;
+}
+
+.z-i{
+    z-index: 1000 !important;
+}
+
+.small-font{
+    font-size: 0.7rem ;
+}
+.hidden{
+    visibility:hidden !important;
+}
+
+@media (max-width: 768px) {
+    .custom-w{
+        width: 7rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .here{
+        display: flex !important;
+        flex-direction: column !important;
+        /* width: 50%; */
+    }
+}

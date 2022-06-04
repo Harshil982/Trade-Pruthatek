@@ -1,0 +1,24 @@
+.hover-effect:hover{
+    cursor: pointer;
+}
+
+.height-button{
+    height: 3rem !important;
+    border-radius: 15px;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+.focus-none:focus{
+    outline: none;
+    box-shadow: none;
+}
+.color-black{
+    color: #000
+}
+
+.btn-bg-custom{
+    background-color: #4065FF;
+}
