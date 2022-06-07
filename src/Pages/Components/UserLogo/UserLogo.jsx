@@ -11,9 +11,9 @@ import { Link } from "react-router-dom";
 const UserLogo = () => {
   return (
     <>
-      <div className="d-flex justify-content-end">
+      <div className="d-flex justify-content-end Admin-dropdown">
         <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
-        <div className="dropdown ms-1 bg-transparent">
+        <div className="dropdown ms-1 bg-transparent Admin-dropdown">
           <Link
             className="btn fw-bold focus-none mt-0"
             to="/"
@@ -35,7 +35,7 @@ const UserLogo = () => {
             Logout
           </button> */}
 
-          <ul className="dropdown-menu drop-down " aria-labelledby="dropdownMenuLink">
+          <ul className="dropdown-menu Admin-dropdown" aria-labelledby="dropdownMenuLink">
             <li>
               <Link className="dropdown-item" to="/">
                 Action

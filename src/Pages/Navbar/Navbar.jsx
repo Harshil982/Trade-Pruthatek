@@ -84,7 +84,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">Dashboard</div>
+                        <div className="col-7 text-start">Dashboard</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -207,7 +207,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">Trading</div>
+                        <div className="col-6 text-start">Trading</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -390,7 +390,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">User</div>
+                        <div className="col-6 text-start">User</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -469,7 +469,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">Log</div>
+                        <div className="col-6 text-start">Log</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -566,7 +566,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">Accounts</div>
+                        <div className="col-6 text-start">Accounts</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -678,7 +678,7 @@ const Navbar = () => {
                             className=""
                           />
                         </div>
-                        <div className="col-8 text-start">Report</div>
+                        <div className="col-6 text-start">Report</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}

@@ -10,7 +10,7 @@ const Calender = () => {
     <>
       <input
         type="date"
-        className="bg-orange date-input color-white w-100 height-button border-none px-3 fs-5 cursor"
+        className="bg-orange date-input color-white w-100 height-button border-none px-3 fs-6 cursor"
         onChange={handledemo}
       />
     </>

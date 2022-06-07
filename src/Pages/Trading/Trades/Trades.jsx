@@ -51,11 +51,11 @@ const Trades = () => {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2">
               <p className="m-2">TRADE AFTER</p>
               <Calender />
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2">
               <p className="m-2">TRADE BEFORE</p>
               <Calender />
             </div>

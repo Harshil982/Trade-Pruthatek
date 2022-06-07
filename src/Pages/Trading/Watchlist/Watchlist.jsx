@@ -6,6 +6,7 @@ import Notifications from "../../Components/Notifications/Notifications";
 import UserLogo from "../../Components/UserLogo/UserLogo";
 import Calender from "../../Components/Calender/Calender";
 import Fade from "react-reveal/Fade";
+import TradingWatchlistTable from "../../Components/Trading-Tables/TradingWatchlistTable";
 
 const Watchlist = () => {
   return (
@@ -34,7 +35,7 @@ const Watchlist = () => {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-1">
               <p className="m-2">SEGMENT</p>
               <select
                 className="form-select custom-white bg-orange color-white height-button focus-none  "
@@ -54,7 +55,7 @@ const Watchlist = () => {
                 </option>
               </select>
             </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-1">
               <p className="m-2">SCRIPT</p>
               <select
                 className="form-select custom-white bg-orange color-white height-button focus-none  "
@@ -78,11 +79,11 @@ const Watchlist = () => {
                 </option>
               </select>
             </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <p className="m-2">EXPIRY</p>
               <Calender />
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-1">
               <p className="m-2">CE/PE</p>
               <select
                 className="form-select custom-white bg-orange color-white height-button focus-none"
@@ -99,7 +100,7 @@ const Watchlist = () => {
                 </option>
               </select>
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-1">
               <p className="m-2">STRIKE</p>
               <select
                 className="form-select custom-white bg-orange color-white height-button focus-none  "
@@ -123,9 +124,14 @@ const Watchlist = () => {
                 </option>
               </select>
             </div>
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+              <p className="m-2">Add New Expiry</p>
+              <Calender />
+            </div>
           </div>
         </div>
         <Table />
+        {/* <TradingWatchlistTable /> */}
       </Fade>
     </>
   );

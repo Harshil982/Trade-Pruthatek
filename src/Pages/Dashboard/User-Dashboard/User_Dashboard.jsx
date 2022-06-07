@@ -8,8 +8,11 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router";
 
 const User_Dashboard = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <>
       <Fade top right>
@@ -77,7 +80,7 @@ const User_Dashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
+                    className={`nav-link mx-3 text-dark border rounder hover-effect-nav text-center ${path === "/trade/user-dashboard" ? "bg-orange text-white" : ""}`}
                     to="/trade/user-dashboard"
                   >
                     User

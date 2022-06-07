@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Add_Account.css";
 import Notifications from "../../Components/Notifications/Notifications";
 import UserLogo from "../../Components/UserLogo/UserLogo";
@@ -8,6 +8,9 @@ import NSEtable from "./NSEtable";
 import Forextable from "./Forex";
 
 const Add_Account = () => {
+  const [MCX, setMCX] = useState(false)
+  const [NSE, setNSE] = useState(false)
+  const [Forex, setForex] = useState(false)
   return (
     <>
       <Fade right>
@@ -27,7 +30,7 @@ const Add_Account = () => {
           </div>
         </div>
 
-        <div className="container text-center my-3 fw-bold">Basic Details</div>
+        <h3 className="text-center my-3 fw-bold">Basic Details</h3>
 
         <div className="container my-4">
           <div className="row">
@@ -35,6 +38,7 @@ const Add_Account = () => {
               <div className="input-group">
                 <span
                   className="input-group-text bg-transparent border-none"
+                  style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   Username *
@@ -45,6 +49,7 @@ const Add_Account = () => {
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -53,6 +58,7 @@ const Add_Account = () => {
                 <span
                   className="input-group-text bg-transparent border-none"
                   id="basic-addon1"
+                  style={{width : "10vw"}}
                 >
                   Password *
                 </span>
@@ -69,6 +75,7 @@ const Add_Account = () => {
               <div className="input-group">
                 <span
                   className="input-group-text bg-transparent border-none"
+                  style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   Account Code *
@@ -86,6 +93,7 @@ const Add_Account = () => {
               <div className="input-group mb-3">
                 <span
                   className="input-group-text bg-transparent border-none"
+                  style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   Account Name*
@@ -103,6 +111,7 @@ const Add_Account = () => {
               <div className="input-group">
                 <label
                   className="input-group-text bg-transparent border-none"
+                  style={{width : "10vw"}}
                   htmlFor="inputGroupSelect01"
                 >
                   Account Type
@@ -129,6 +138,7 @@ const Add_Account = () => {
               <div className="input-group mb-3">
                 <span
                   className="input-group-text bg-transparent border-none"
+                  style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   My Partnership
@@ -265,6 +275,8 @@ const Add_Account = () => {
                         type="checkbox"
                         name="flexRadioDefault"
                         id="flexRadioDefault1"
+                        value={MCX}
+                        onChange={() => setMCX(prev => !prev)}
                       />
                       <label
                         className="form-check-label "
@@ -273,9 +285,9 @@ const Add_Account = () => {
                         MCX
                       </label>
                     </div>
-                    <div className="bg-orange w-50 color-white text-center cursor-pointer py-3 input-border">
+                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={MCX ? false : true} >
                       MCX View
-                    </div>
+                    </button>
                   </div>
                   <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                     <div className="form-check ">
@@ -284,6 +296,8 @@ const Add_Account = () => {
                         type="checkbox"
                         name="flexRadioDefault"
                         id="flexRadioDefault2"
+                        value={NSE}
+                        onChange={() => setNSE(prev => !prev)}
                       />
                       <label
                         className="form-check-label focus-none"
@@ -292,9 +306,9 @@ const Add_Account = () => {
                         NSE
                       </label>
                     </div>
-                    <div className="bg-orange w-50 color-white text-center py-3 cursor-pointer input-border">
+                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={NSE ? false : true} >
                       NSE View
-                    </div>
+                    </button>
                   </div>
                   <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                     <div className="form-check ">
@@ -303,6 +317,8 @@ const Add_Account = () => {
                         type="checkbox"
                         name="flexRadioDefault"
                         id="flexRadioDefault3"
+                        value={Forex}
+                        onChange = {() => setForex(prev => !prev)}
                       />
                       <label
                         className="form-check-label "
@@ -311,9 +327,9 @@ const Add_Account = () => {
                         Forex
                       </label>
                     </div>
-                    <div className="bg-orange w-50 color-white text-center cursor-pointer py-3 input-border">
+                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={Forex ? false : true} >
                       Forex
-                    </div>
+                    </button>
                   </div>
                   {/* <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                     <div className="form-check ">
@@ -506,7 +522,7 @@ const Add_Account = () => {
                     className="input-group-text bg-transparent border-none fw-bold"
                     id="basic-addon1"
                   >
-                    Alert % :
+                    Alert :
                   </span>
                   <input
                     type="number"

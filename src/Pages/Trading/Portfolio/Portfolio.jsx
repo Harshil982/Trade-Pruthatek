@@ -87,19 +87,19 @@ const Portfolio = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
               <UserLogo />
+            </div>
           </div>
-        </div>
 
-        {/* <div className="container">
+          {/* <div className="container">
           <div className="row"> */}
-            
-            {/* </div>
+
+          {/* </div>
           </div> */}
         </div>
 
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-1">
               <p className="m-2">MARKET</p>
               <select
                 className="form-select bg-orange color-white height-button focus-none  "
@@ -123,7 +123,7 @@ const Portfolio = () => {
                 </option>
               </select>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2">
               <p className="m-2">SCRIPT</p>
               <select
                 className="form-select bg-orange color-white height-button focus-none  "
@@ -147,9 +147,39 @@ const Portfolio = () => {
                 </option>
               </select>
             </div>
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
               <p className="m-2">EXPIRY DATE</p>
               <Calender />
+            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
+              <p className="m-2">Master</p>
+              <input
+                type="text"
+                className="form-control input-border focus-none"
+                placeholder=""
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
+              <p className="m-2">Client</p>
+              <input
+                type="text"
+                className="form-control input-border focus-none"
+                placeholder=""
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
+              <p className="m-2">Broker</p>
+              <input
+                type="text"
+                className="form-control input-border focus-none"
+                placeholder=""
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
             </div>
           </div>
         </div>

@@ -8,12 +8,12 @@ import {
 import "./Table-trading.css";
 import { Link } from "react-router-dom";
 
-const Table = () => {
+const TradingWatchlistTable = () => {
   const data = "helloo";
   return (
     <>
       <div className="table-responsive ms-3">
-        <table className="table my-5 table-borderless">
+        <table className="table my-5 table-borderless bg-dark">
           <thead>
             <tr className="table-border-none">
               <th scope="col" className="bg-dark text-white ">
@@ -56,7 +56,7 @@ const Table = () => {
               <td className="td-border py-0 ">
                 <Link
                   to="/trade/detail-graph"
-                  className="no-dec text-dark"
+                  className="no-dec text-white"
                   state={data}
                 >
                   NIFTY 31MAR2022
@@ -78,36 +78,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -123,7 +123,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -143,36 +143,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -188,7 +188,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -208,231 +208,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  <FontAwesomeIcon icon={faCaretDown} color="red" /> 1 48.95
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,533.50
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,436.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,501.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,368.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <button
-                  type="button"
-                  className="btn  mx-3 my-0 py-0 the-button"
-                >
-                  <FontAwesomeIcon
-                    icon={faXmark}
-                    color="red"
-                    size="1x"
-                    className="cross-size"
-                  />
-                </button>
-              </td>
-            </tr>
-            <tr className="">
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  NIFTY 31MAR2022
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-danger text-center">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  0.96
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 1 48.95
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,533.50
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,436.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,501.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,368.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <button
-                  type="button"
-                  className="btn  mx-3 my-0 py-0 the-button"
-                >
-                  <FontAwesomeIcon
-                    icon={faXmark}
-                    color="red"
-                    size="1x"
-                    className="cross-size"
-                  />
-                </button>
-              </td>
-            </tr>
-            <tr className="">
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  NIFTY 31MAR2022
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-danger text-center">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  0.96
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 1 48.95
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,533.50
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,436.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,501.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  17,368.05
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <button
-                  type="button"
-                  className="btn  mx-3 my-0 py-0 the-button"
-                >
-                  <FontAwesomeIcon
-                    icon={faXmark}
-                    color="red"
-                    size="1x"
-                    className="cross-size"
-                  />
-                </button>
-              </td>
-            </tr>
-            <tr className="">
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  NIFTY 31MAR2022
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  0.96
-                </Link>
-              </td>
-              <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretDown} color="red" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -448,7 +253,137 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  NIFTY 31MAR2022
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-danger text-center">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  0.96
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,533.50
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,436.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,501.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,368.05
+                </Link>
+              </td>
+              <td className="td-border py-0 text-center">
+                <button
+                  type="button"
+                  className="btn  mx-3 my-0 py-0 the-button"
+                >
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    color="red"
+                    size="1x"
+                    className="cross-size"
+                  />
+                </button>
+              </td>
+            </tr>
+            <tr className="">
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  NIFTY 31MAR2022
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-danger text-center">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  0.96
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,533.50
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,436.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,501.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,368.05
+                </Link>
+              </td>
+              <td className="td-border py-0 text-center">
+                <button
+                  type="button"
+                  className="btn  mx-3 my-0 py-0 the-button"
+                >
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    color="red"
+                    size="1x"
+                    className="cross-size"
+                  />
+                </button>
+              </td>
+            </tr>
+            <tr className="">
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -468,36 +403,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
-                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  <FontAwesomeIcon icon={faCaretDown} color="red" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -513,7 +448,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -533,36 +468,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -578,7 +513,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -598,36 +533,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -643,7 +578,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -663,36 +598,36 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
@@ -708,7 +643,7 @@ const Table = () => {
             </tr>
             <tr className="">
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
                 </Link>
               </td>
@@ -728,39 +663,104 @@ const Table = () => {
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   0.96
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,533.50
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,436.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,501.05
                 </Link>
               </td>
               <td className="td-border py-0 ">
-                <Link to="/trade/detail-graph" className="no-dec text-dark">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
                   17,368.05
                 </Link>
               </td>
-              <td className="td-border py-0 ">
+              <td className="td-border py-0 text-center">
                 <button
                   type="button"
                   className="btn  mx-3 my-0 py-0 the-button"
+                >
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    color="red"
+                    size="1x"
+                    className="cross-size"
+                  />
+                </button>
+              </td>
+            </tr>
+            <tr className="">
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  NIFTY 31MAR2022
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,519.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0  bg-primary text-center ">
+                <Link to="/trade/detail-graph" className="no-dec color-white">
+                  17,518.00
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  0.96
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  <FontAwesomeIcon icon={faCaretUp} color="green" /> 148.95
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,533.50
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,436.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,501.05
+                </Link>
+              </td>
+              <td className="td-border py-0 ">
+                <Link to="/trade/detail-graph" className="no-dec text-white">
+                  17,368.05
+                </Link>
+              </td>
+              <td className="td-border py-0 text-center">
+                <button
+                  type="button"
+                  className="btn  mx-3 my-0 py-0 the-button text-center"
                 >
                   <FontAwesomeIcon
                     icon={faXmark}
@@ -778,4 +778,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default TradingWatchlistTable;

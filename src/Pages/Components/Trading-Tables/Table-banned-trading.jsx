@@ -6,7 +6,7 @@ const Table = () => {
     <>
       <div className="table-responsive ">
         <table className="table my-5 table-borderless">
-          <tbody className="bg-gray">
+          <tbody className="">
             <tr className="">
               <td className="p-1 text-dark">ADANIENT-NSEFUT</td>
               <td className="p-1 text-danger  text-center">

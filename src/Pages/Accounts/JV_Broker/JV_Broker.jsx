@@ -9,8 +9,8 @@ const JV_Broker = () => {
       <Fade right bottom>
         <div className="container">
           <div className="row my-2">
-            <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fw-bold">
-              JV Broker
+            <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fs-5 mt-5 fw-bold">
+              Acoount / JV Broker
             </div>
             <div className="col-4 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
 

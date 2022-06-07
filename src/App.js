@@ -51,12 +51,14 @@ import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 import DetailGraph from "./Pages/Components/Detail-graph/DetailGraph";
 import JVBrockerDelete from "./Pages/Accounts/JV_Brocker_Delete/JVBrockerDelete";
+import Report from "./Pages/Report/Report";
+import SecondReport from "./Pages/Report/SecondReport";
+
 
 
 const App = () => {
-
+  document.title = "Yellow Coin"
   return (
-
     <div className="App">
       <Router>
         <div className="container-fluid">
@@ -135,6 +137,9 @@ const App = () => {
                 {/* Detail Graph */}
 
                 <Route path="/trade/detail-graph" element={<DetailGraph />}></Route>
+
+                <Route path="/trade/report" element={<Report />}></Route>
+                <Route path="/trade/Leadger-report" element={<SecondReport />}></Route>
 
               </Routes>
             </div>

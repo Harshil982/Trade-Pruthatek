@@ -8,8 +8,11 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router";
 
 const M2M = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <>
       <Fade top right>
@@ -71,7 +74,7 @@ const M2M = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/m2m">
+                  <Link className={`nav-link mx-3 text-dark border rounder hover-effect-nav text-center ${path === "/trade/m2m" ? "bg-orange text-white" : ""}`} to="/trade/m2m">
                     M2M Alerts
                   </Link>
                 </li>

@@ -87,7 +87,7 @@
 } */
 
 .width-navbar-drop {
-  width: 13rem !important;
+  width: 11rem !important;
   /* border-radius: 20px; */
 }
 
@@ -108,7 +108,7 @@
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .width-navbar-drop {
     width: 90vw !important;
   }

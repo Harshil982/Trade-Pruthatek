@@ -20,10 +20,13 @@ import UserLogo from "../../Components/UserLogo/UserLogo";
 // import DetailTable from "../../Components/Detail-Table/Detail_Table";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 
 
 
 const NewDashboard = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <>
       <Fade top right>
@@ -60,7 +63,7 @@ const NewDashboard = () => {
               <ul className="navbar-nav mb-2">
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
+                    className={`nav-link mx-3 text-dark border rounder hover-effect-nav text-center ${path === "/trade/trades-dashboard" ? "bg-orange text-white" : ""} `}
                     to="/trade/trades-dashboard"
                   >
                     Dashboard
@@ -81,7 +84,7 @@ const NewDashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/summary">
-                    Summary Reports
+                    Margin Reports
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -123,7 +126,7 @@ const NewDashboard = () => {
               </div>
               <div className="text-center border shadow-sm btn-radius set-width ">
                 <p className="fs-4 mt-3 mb-0 text-info">17,000</p>
-                <p className="my-0 mb-1">Daily Views</p>
+                <p className="my-0 mb-1">Master</p>
               </div>
             </div>
             <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
@@ -137,7 +140,7 @@ const NewDashboard = () => {
               </div>
               <div className="text-center border shadow-sm btn-radius set-width ">
                 <p className="fs-4 mt-3 mb-0 text-primary">8000</p>
-                <p className="my-0 mb-1">Sales</p>
+                <p className="my-0 mb-1">Broker</p>
               </div>
             </div>
             <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
@@ -151,7 +154,7 @@ const NewDashboard = () => {
               </div>
               <div className="text-center border shadow-sm btn-radius set-width ">
                 <p className="fs-4 mt-3 mb-0 color-brown">284</p>
-                <p className="my-0 mb-1">Comments</p>
+                <p className="my-0 mb-1">Client</p>
               </div>
             </div>
             <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">

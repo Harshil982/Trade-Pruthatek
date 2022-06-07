@@ -8,8 +8,11 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router";
 
 const Summary = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <>
       <Fade top right>
@@ -68,7 +71,7 @@ const Summary = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/summary">
+                  <Link className={`nav-link mx-3 text-dark border rounder hover-effect-nav text-center ${path === "/trade/summary" ? "bg-orange text-white" : ""} `} to="/trade/summary">
                     Summary Reports
                   </Link>
                 </li>

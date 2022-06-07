@@ -1,5 +1,7 @@
-.drop-down
+.Admin-dropdown,
+.Admin-dropdown li,
+.Admin-dropdown li a
 {
-    background-color: white;
-    z-index: 99;
+    background-color: white !important;
+    z-index: 90 !important;
 }

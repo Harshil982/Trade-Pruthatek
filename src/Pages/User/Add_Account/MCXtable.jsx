@@ -5,7 +5,7 @@ function MCXtable(props) {
         <>
             <h3 className="text-center my-4" >MCX</h3>
             <div className="row">
-                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark mt-3">
                     <h5 className="text-center mt-2">Brokerage Details</h5>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 mt-4">
                         <div className="input-group">
@@ -101,10 +101,10 @@ function MCXtable(props) {
                         </div>
                     </div>
                     <div className="d-flex justify-content-end" >
-                        <button className="btn btn-success mb-4" >+ Add</button>
+                        <button className="btn btn-danger mb-4" >+ Add</button>
                     </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark mt-3">
                     <h5 className="text-center mt-2">Margin Details</h5>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 mt-4">
                         <div className="input-group">
@@ -217,10 +217,10 @@ function MCXtable(props) {
                         </div>
                     </div>
                     <div className="d-flex justify-content-end" >
-                        <button className="btn btn-success mb-4" >+ Add</button>
+                        <button className="btn btn-danger mb-4" >+ Add</button>
                     </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-dark mt-3">
                     <h5 className="text-center mt-2">Other Details</h5>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 mt-4">
                         <div className="input-group">

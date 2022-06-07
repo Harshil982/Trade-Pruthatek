@@ -10,8 +10,11 @@ import "./Trade_Entry.css"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router";
 
 const Trade_Entry = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <>
       <Fade top right>
@@ -87,7 +90,7 @@ const Trade_Entry = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
+                    className={`nav-link mx-3 text-dark border rounder hover-effect-nav text-center ${path === "/trade/trade-entry" ? "bg-orange text-white" : ""} `}
                     to="/trade/trade-entry"
                   >
                     Trade Entry
