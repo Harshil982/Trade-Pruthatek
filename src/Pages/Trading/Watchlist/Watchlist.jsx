@@ -130,8 +130,8 @@ const Watchlist = () => {
             </div>
           </div>
         </div>
-        <Table />
-        {/* <TradingWatchlistTable /> */}
+        {/* <Table /> */}
+        <TradingWatchlistTable />
       </Fade>
     </>
   );

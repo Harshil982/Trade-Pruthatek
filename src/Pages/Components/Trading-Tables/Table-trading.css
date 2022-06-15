@@ -11,6 +11,12 @@
     font-size: larger !important;
 }
 
+.fixed-width-Trade
+{
+    max-width: 102px !important;
+    min-width: 102px !important;
+}
+
 .focus-none-button:focus {
     outline: none !important;
     box-shadow: none !important;

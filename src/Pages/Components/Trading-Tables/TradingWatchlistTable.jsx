@@ -19,13 +19,13 @@ const TradingWatchlistTable = () => {
               <th scope="col" className="bg-dark text-white ">
                 NSEFUT SYM
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="bg-dark text-white fixed-width-Trade">
                 BIO RATE
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="bg-dark text-white  fixed-width-Trade">
                 ASK RATE
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="bg-dark text-white  fixed-width-Trade">
                 LTP
               </th>
               <th scope="col" className="bg-dark text-white ">
@@ -63,18 +63,18 @@ const TradingWatchlistTable = () => {
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec c color-white">
+                <Link to="/trade/detail-graph" className="no-dec c color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
+                  0.00
                 </Link>
               </td>
               <td className="td-border py-0 ">
@@ -128,18 +128,18 @@ const TradingWatchlistTable = () => {
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-danger text-center">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
+                  0.00
                 </Link>
               </td>
               <td className="td-border py-0 ">
@@ -193,18 +193,18 @@ const TradingWatchlistTable = () => {
                 </Link>
               </td>
               <td className="td-border py-0  bg-danger text-center">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
+                  0.00
                 </Link>
               </td>
               <td className="td-border py-0 ">
@@ -258,18 +258,18 @@ const TradingWatchlistTable = () => {
                 </Link>
               </td>
               <td className="td-border py-0  bg-danger text-center">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
                   17,518.00
                 </Link>
               </td>
               <td className="td-border py-0  bg-primary text-center ">
-                <Link to="/trade/detail-graph" className="no-dec color-white">
-                  17,518.00
+                <Link to="/trade/detail-graph" className="no-dec color-white fixed-width-Trade">
+                  0.00
                 </Link>
               </td>
               <td className="td-border py-0 ">
@@ -316,7 +316,7 @@ const TradingWatchlistTable = () => {
                 </button>
               </td>
             </tr>
-            <tr className="">
+            {/* <tr className="">
               <td className="td-border py-0 ">
                 <Link to="/trade/detail-graph" className="no-dec text-white">
                   NIFTY 31MAR2022
@@ -770,7 +770,7 @@ const TradingWatchlistTable = () => {
                   />
                 </button>
               </td>
-            </tr>
+            </tr> */}
           </tbody>
         </table>
       </div>
