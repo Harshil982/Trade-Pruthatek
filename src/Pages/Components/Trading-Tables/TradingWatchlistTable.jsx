@@ -15,38 +15,38 @@ const TradingWatchlistTable = () => {
       <div className="table-responsive ms-3">
         <table className="table my-5 table-borderless bg-dark">
           <thead>
-            <tr className="table-border-none">
-              <th scope="col" className="bg-dark text-white ">
+            <tr className="table-border-none text-center">
+              <th scope="col" className="td-border bg-dark text-white ">
                 NSEFUT SYM
               </th>
-              <th scope="col" className="bg-dark text-white fixed-width-Trade">
+              <th scope="col" className="td-border bg-dark text-white fixed-width-Trade">
                 BIO RATE
               </th>
-              <th scope="col" className="bg-dark text-white  fixed-width-Trade">
+              <th scope="col" className="td-border bg-dark text-white  fixed-width-Trade">
                 ASK RATE
               </th>
-              <th scope="col" className="bg-dark text-white  fixed-width-Trade">
+              <th scope="col" className="td-border bg-dark text-white  fixed-width-Trade">
                 LTP
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 CHANGE%
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 NET CHANGE
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 HIGH
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 LOW
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 OPEN
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 CLOSE
               </th>
-              <th scope="col" className="bg-dark text-white ">
+              <th scope="col" className="td-border bg-dark text-white ">
                 REMOVE
               </th>
             </tr>
