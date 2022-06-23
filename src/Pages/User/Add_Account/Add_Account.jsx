@@ -35,17 +35,17 @@ const Add_Account = () => {
         <div className="container my-4">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group">
+              <div className="input-group row">
                 <span
-                  className="input-group-text bg-transparent border-none"
-                  style={{width : "10vw"}}
+                  className="input-group-text bg-transparent border-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
+                  // style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   Username *
                 </span>
                 <input
                   type="text"
-                  className="form-control input-border focus-none"
+                  className="form-control input-border focus-nonecol-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -54,17 +54,16 @@ const Add_Account = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 row">
                 <span
-                  className="input-group-text bg-transparent border-none"
+                  className="input-group-text bg-transparent border-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
                   id="basic-addon1"
-                  style={{width : "10vw"}}
                 >
                   Password *
                 </span>
                 <input
                   type="password"
-                  className="form-control input-border focus-none"
+                  className="form-control input-border focus-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -72,17 +71,16 @@ const Add_Account = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group">
+              <div className="input-group row">
                 <span
-                  className="input-group-text bg-transparent border-none"
-                  style={{width : "10vw"}}
+                  className="input-group-text bg-transparent border-none  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
                   id="basic-addon1"
                 >
                   Account Code *
                 </span>
                 <input
                   type="text"
-                  className="form-control input-border focus-none"
+                  className="form-control input-border focus-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -90,17 +88,17 @@ const Add_Account = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 row">
                 <span
-                  className="input-group-text bg-transparent border-none"
-                  style={{width : "10vw"}}
+                  className="input-group-text bg-transparent border-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
+                  // style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   Account Name*
                 </span>
                 <input
                   type="text"
-                  className="form-control input-border focus-none"
+                  className="form-control input-border focus-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -108,16 +106,16 @@ const Add_Account = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group">
+              <div className="input-group row">
                 <label
-                  className="input-group-text bg-transparent border-none"
-                  style={{width : "10vw"}}
+                  className="input-group-text bg-transparent border-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
+                  // style={{width : "10vw"}}
                   htmlFor="inputGroupSelect01"
                 >
                   Account Type
                 </label>
                 <select
-                  className="form-select input-border focus-none"
+                  className="form-select input-border focus-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   id="inputGroupSelect01"
                 >
                   <option className="">Select Account Type</option>
@@ -135,17 +133,17 @@ const Add_Account = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-2">
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 row">
                 <span
-                  className="input-group-text bg-transparent border-none"
-                  style={{width : "10vw"}}
+                  className="input-group-text bg-transparent border-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3"
+                  // style={{width : "10vw"}}
                   id="basic-addon1"
                 >
                   My Partnership
                 </span>
                 <input
                   type="text"
-                  className="form-control input-border focus-none"
+                  className="form-control input-border focus-none col-12 col-sm-12 col-md-12 col-lg-6 col-xl-9"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -219,7 +217,7 @@ const Add_Account = () => {
                               name="flexRadioDefault1000"
                               id="flexRadioDefault02"
                             />
-                            <label
+                            <
                               className="form-check-label"
                               htmlFor="flexRadioDefault02"
                             >
@@ -285,7 +283,7 @@ const Add_Account = () => {
                         MCX
                       </label>
                     </div>
-                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={MCX ? false : true} >
+                    <button className="btn btn-orange bg-orange w-75 color-white text-center cursor-pointer py-3 input-border" disabled={MCX ? false : true} >
                       MCX View
                     </button>
                   </div>
@@ -306,7 +304,7 @@ const Add_Account = () => {
                         NSE
                       </label>
                     </div>
-                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={NSE ? false : true} >
+                    <button className="btn btn-orange bg-orange w-75 color-white text-center cursor-pointer py-3 input-border" disabled={NSE ? false : true} >
                       NSE View
                     </button>
                   </div>
@@ -327,7 +325,7 @@ const Add_Account = () => {
                         Forex
                       </label>
                     </div>
-                    <button className="btn btn-orange bg-orange w-50 color-white text-center cursor-pointer py-3 input-border" disabled={Forex ? false : true} >
+                    <button className="btn btn-orange bg-orange w-75 color-white text-center cursor-pointer py-3 input-border" disabled={Forex ? false : true} >
                       Forex
                     </button>
                   </div>

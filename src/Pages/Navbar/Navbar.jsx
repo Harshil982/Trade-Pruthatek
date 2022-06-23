@@ -11,12 +11,14 @@ import {
   faBook,
   faAddressBook,
   faUserCircle,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 // import Footer from "../Footer/Footer";
 
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState();
+  const [MenuVisible, setMenuVisible] = useState(true)
 
   const menuOpen = (currentSelectedItem) => {
     setSelectedTab(currentSelectedItem);
@@ -26,8 +28,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" d-flex flex-column flex-lg-row justify-content-center">
-        <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column fix">
+      <div className=" d-flex flex-lg-row  justify-content-between">
+        <nav className="navbar navbar-expand-md navbar-light d-flex justify-content-between align-items-center fix w-100">
           <Link to="/trade/trades-dashboard">
             <img
               src={tradeLogo}
@@ -35,6 +37,7 @@ const Navbar = () => {
               className="my-2 img-fluid"
               width="175"
               height=""
+              style={{marginRight : "1vw"}}
             />
           </Link>
           <button
@@ -48,11 +51,13 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          {/* <FontAwesomeIcon icon={faBars} className="menus-hamburger" onClick={() => setMenuVisible(prev => !prev)} /> */}
+          {MenuVisible ? 
           <div
             className="collapse navbar-collapse w-100"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
+            <ul className="navbar-nav w-100 d-flex text-center text-md-end">
               <li>
                 <div className="dropdown ">
                   <button
@@ -60,7 +65,7 @@ const Navbar = () => {
                       selectedTab === "/dashboard"
                         ? "radius-navbar-remove bg-orange color-white border border-none"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 ms-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -74,8 +79,8 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faArrowTrendUp}
                             color={
@@ -83,9 +88,9 @@ const Navbar = () => {
                             }
                             className=""
                           />
-                        </div>
-                        <div className="col-7 text-start">Dashboard</div>
-                        <div className="col-2">
+                        </div> */}
+                        <div className="col-8 text-start">Dashboard</div>
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
@@ -183,7 +188,7 @@ const Navbar = () => {
                       selectedTab === "/trades"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -197,8 +202,8 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0 ">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0 ">
                           <FontAwesomeIcon
                             icon={faEye}
                             color={
@@ -206,9 +211,9 @@ const Navbar = () => {
                             }
                             className=""
                           />
-                        </div>
-                        <div className="col-6 text-start">Trading</div>
-                        <div className="col-2">
+                        </div> */}
+                        <div className="col-8 text-start">Trading</div>
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
@@ -281,7 +286,7 @@ const Navbar = () => {
                       selectedTab === "/forex"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -295,16 +300,9 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
-                          <FontAwesomeIcon
-                            icon={faDollarSign}
-                            color={selectedTab === "/forex" ? "white" : "#8E8E8E"}
-                            className=""
-                          />
-                        </div>
+                      <div className="row custom-font-nav">
                         <div className="col-8 text-start">Forex/Comex</div>
-                        <div className="col-2">
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={selectedTab === "/forex" ? "white" : "#8E8E8E"}
@@ -368,7 +366,7 @@ const Navbar = () => {
                       selectedTab === "/user"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -382,16 +380,16 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faUserCircle}
                             color={selectedTab === "/user" ? "white" : "#8E8E8E"}
                             className=""
                           />
-                        </div>
-                        <div className="col-6 text-start">User</div>
-                        <div className="col-2">
+                        </div> */}
+                        <div className="col-8 text-start">User</div>
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={selectedTab === "/user" ? "white" : "#8E8E8E"}
@@ -447,7 +445,7 @@ const Navbar = () => {
                       selectedTab === "/log"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -461,15 +459,15 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faBook}
                             color={selectedTab === "/log" ? "white" : "#8E8E8E"}
                             className=""
                           />
-                        </div>
-                        <div className="col-6 text-start">Log</div>
+                        </div> */}
+                        <div className="col-8 text-start">Log</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
@@ -542,7 +540,7 @@ const Navbar = () => {
                       selectedTab === "/accounts"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -556,8 +554,8 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faUser}
                             color={
@@ -565,9 +563,9 @@ const Navbar = () => {
                             }
                             className=""
                           />
-                        </div>
-                        <div className="col-6 text-start">Accounts</div>
-                        <div className="col-2">
+                        </div> */}
+                        <div className="col-8 text-start">Accounts</div>
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
@@ -654,7 +652,7 @@ const Navbar = () => {
                       selectedTab === "/report"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
                         : "radius-navbar border-light shadow-sm"
-                    } focus-none mt-4 p-0`}
+                    } focus-none mt-1 me-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -668,8 +666,8 @@ const Navbar = () => {
                     }}
                   >
                     <div className="container width-navbar-drop">
-                      <div className="row">
-                        <div className="col-2 p-0">
+                      <div className="row custom-font-nav">
+                        {/* <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faAddressBook}
                             color={
@@ -677,9 +675,9 @@ const Navbar = () => {
                             }
                             className=""
                           />
-                        </div>
-                        <div className="col-6 text-start">Report</div>
-                        <div className="col-2">
+                        </div> */}
+                        <div className="col-8 text-start">Report</div>
+                        <div className="col-4">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
@@ -748,6 +746,10 @@ const Navbar = () => {
               {/* <Footer /> */}
             </ul>
           </div>
+          :
+          null
+        }
+          <FontAwesomeIcon icon={faBars} className="menus-hamburger" onClick={() => setMenuVisible(prev => !prev)} />
         </nav>
       </div>
     </>
